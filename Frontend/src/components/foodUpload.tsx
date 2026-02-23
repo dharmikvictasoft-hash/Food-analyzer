@@ -54,7 +54,7 @@ export default function FoodAnalyzer() {
       const formData = new FormData();
       formData.append("image", image);
 
-      const res = await fetch("http://localhost:5000/analyze-food", {
+      const res = await fetch("https://food-analyzer-x7bd.onrender.com/analyze-food", {
         method: "POST",
         body: formData,
       });
