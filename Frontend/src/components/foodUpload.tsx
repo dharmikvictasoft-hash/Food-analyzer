@@ -106,7 +106,7 @@ export default function FoodAnalyzer() {
       <div className="relative mx-auto max-w-7xl space-y-6">
         <header className="rounded-3xl border border-calvic-500/30 bg-slate-900/70 p-6 shadow-glow backdrop-blur xl:p-8">
           <p className="mb-2 inline-flex rounded-full border border-calvic-300/60 bg-calvic-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-calvic-100">
-            CalVic AI Nutrition Suite
+            Nutrition Suite
           </p>
           <h1 className="font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
             Food Vision Dashboard
@@ -163,7 +163,7 @@ export default function FoodAnalyzer() {
                 disabled={loading || !image}
                 className="mt-5 w-full rounded-xl bg-gradient-to-r from-calvic-700 via-calvic-500 to-calvic-700 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-calvic-800/40 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {loading ? "Analyzing image..." : "Analyze with CalVic AI"}
+                {loading ? "Analyzing image..." : "Analyze with"}
               </button>
 
               {error && (
