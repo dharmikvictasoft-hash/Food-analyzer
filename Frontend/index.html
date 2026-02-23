@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              calvic: {
+                950: "#0a1f1c",
+                900: "#0f2f29",
+                800: "#155245",
+                700: "#1e7663",
+                500: "#2bb48e",
+                300: "#86e2c4",
+                100: "#d7fff1"
+              }
+            },
+            fontFamily: {
+              display: ["Poppins", "ui-sans-serif", "system-ui"],
+              body: ["Plus Jakarta Sans", "ui-sans-serif", "system-ui"]
+            },
+            boxShadow: {
+              glow: "0 20px 60px rgba(43, 180, 142, 0.28)"
+            }
+          }
+        }
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+    />
+  </head>
+  <body class="bg-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
