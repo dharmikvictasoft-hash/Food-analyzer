@@ -3,15 +3,22 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+
   server: {
+    host: true,
+    port: 5173,
+    allowedHosts: ["food-analyzer-1-kooe.onrender.com"],
+
     proxy: {
       "/api": {
         target: "http://127.0.0.1:5000",
         changeOrigin: true,
       },
-      allowedHosts: ["food-analyzer-1-kooe.onrender.com"],
     },
+  },
+
+  preview: {
     host: true,
-    port: 5173,
+    allowedHosts: ["food-analyzer-1-kooe.onrender.com"],
   },
 });
